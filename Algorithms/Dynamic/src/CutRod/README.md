@@ -10,7 +10,32 @@
 
 
 ### Наивная реализация.
+Псевдокод:
+
+![image not found](https://i.ibb.co/09vnJXj/2019-11-16-0-33-06.png)
+
 Дерево всех вызовов для вычисления `r(4)`:
  ![image not found](https://i.ibb.co/nPD84XW/2019-11-16-0-21-22.png)
 
 Можно заметить дубликаты при вычислении. Данное решение растёт экспоненциально относительно `n`.
+
+Реализация:
+```
+int cutRod(int[] price, int n) {
+        if (n == 0) {
+            return 0;
+        }
+
+        int expectedProfit = Integer.MIN_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            expectedProfit = Math.max(
+                    expectedProfit,
+                    price[i] + cutRod(price, n - i - 1)
+            );
+        }
+
+        return expectedProfit;
+    }
+}
+```
