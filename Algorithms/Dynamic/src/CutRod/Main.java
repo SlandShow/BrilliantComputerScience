@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String... args) {
         long start = System.currentTimeMillis();
-        new Test().solve();
+        new Main().solve();
         long end = System.currentTimeMillis();
         System.out.println("\nCalculated in " + (end - start) + " ms");
     }
