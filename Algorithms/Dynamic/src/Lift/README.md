@@ -10,11 +10,22 @@
 ## Псевдокод
 ![image not found](https://i.ibb.co/Sn7FVsJ/2019-11-20-20-40-46.png)
 
-Где D - минимальная стоимость пути до `n`
-A - стоимость ступеньки `n`
-D(0) = 0
+Где D - минимальная стоимость пути до `n`, A - стоимость ступеньки `n`, D(0) = 0
 
 ## Реализация
 ```
-
+int stairCoast(int n) {
+  int[] d = new int[n];
+  d[0] = 0;
+  d[1] = d[0] + a[1];
+  
+  for(int index = 2; index < n; index++) {
+    d[index] = Math.min(d[index - 1], d[index - 2]) + a[index];
+  }
+  
+  return d[n - 1];
+}
 ```
+
+## Результат выполнения алгоритма
+![image not found](https://i.ibb.co/5TDxVCv/2019-11-20-20-52-33.png)
