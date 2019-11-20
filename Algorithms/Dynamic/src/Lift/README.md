@@ -7,8 +7,8 @@
 ### Пример: 
 ![image not found](https://i.ibb.co/3Fjrpfp/2019-11-20-20-42-00.png)
 
-## Псевдокод
-![image not found](https://i.ibb.co/Sn7FVsJ/2019-11-20-20-40-46.png)
+## Рекурентная форма
+![image not found](https://i.ibb.co/WGrDC1W/2019-11-21-0-23-43.png)
 
 Где D - минимальная стоимость пути до `n`, A - стоимость ступеньки `n`, D(0) = 0
 
