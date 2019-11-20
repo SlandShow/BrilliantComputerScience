@@ -26,3 +26,6 @@ int stairCoast(int n) {
   return d[n - 1];
 }
 ```
+
+## Результат
+![image not found](https://i.ibb.co/tmtpSRz/2019-11-20-20-42-00.png)
