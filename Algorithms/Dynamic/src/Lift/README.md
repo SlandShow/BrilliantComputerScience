@@ -38,6 +38,6 @@ int stairCoast(int n) {
 ```
 
 Вывод
-``
+```
 Minimum coast is -8
 ```
