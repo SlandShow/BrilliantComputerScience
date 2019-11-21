@@ -29,3 +29,15 @@ int stairCoast(int n) {
 
 ## Результат
 ![image not found](https://i.ibb.co/tmtpSRz/2019-11-20-20-42-00.png)
+
+## Пример
+Ввод
+```
+0 -1 10 -3 -4 7 1 -3
+5
+```
+
+Вывод
+``
+Minimum coast is -8
+```
